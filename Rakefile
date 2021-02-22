@@ -1,9 +1,6 @@
-namespace :ここにグループ名を記述する do
-  desc "ここに処理の説明を記述する"
-  task タスク名: :environment do
+# Add your own tasks in files placed in lib/tasks ending in .rake,
+# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
-         ここに実際のタスクを記述する
+require_relative 'config/application'
 
-    end
-  end
-end
+Rails.application.load_tasks
